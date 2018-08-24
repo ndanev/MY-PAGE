@@ -1,0 +1,32 @@
+body{
+    font-family: Verdana;
+    padding: 0px;
+    margin: 0px;
+}
+form {
+    margin-top: 50px;
+}
+input {
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+}
+label {
+    padding: 10px;
+    font-size: 20px;
+}
+.btn {
+    width: 25%;
+    background-color: rgb(48, 168, 58);
+    color: #fff;
+    border-radius: 3px;
+    border-style: none;
+    margin-top: 15px;
+}
+.my-navbar {
+    background: rgba(0, 0, 0 0.5);
+}
+.container {
+    width: 100%;
+    
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <% include partials/nav.ejs %>
+        
+        <h1>Contact Us!</h1>
+        <p>We will help you to develop your programming skills and knowlage...</p>
+        
+        <form id="contact-form" method="POST" action="/contact">
+            <label for="who">Who do you want to contact?</label> <br>
+            <input type="text" name="who" value="<%= qs.person %>"> <br>
+            <label for="department">Which department?</label> <br>
+            <input type="text" name="department"  value="<%= qs.dept %>"> <br>
+            <label for="email">Your email:</label> <br>
+            <input type="email" name="email" /> <br>
+            <input type="submit" value="Submit" class="btn" /> <br>
+        </form>
+    </center>
+
+</body>
+</html>
